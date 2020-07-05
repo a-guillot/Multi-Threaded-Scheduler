@@ -45,6 +45,8 @@ struct elem fifo_defiler(struct fifo * f)
 	struct elem res;
 	if (f->taille == 0)
 	{
+        res.precedent = NULL;
+        res.suivant = NULL;
 		return res;
 	}
 
